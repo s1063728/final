@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "onetwo";
+}
+
+<h2>check week</h2>
+@using (Html.BeginForm( "onetwo", "Week", FormMethod.Post)) 
+{ 
+    <p>請輸入數字:@Html.TextBox(name:"num")<input type="submit" value="查詢" /></p>
+    <p>查詢結果:@ViewBag.result</p>
+    
+}
+
